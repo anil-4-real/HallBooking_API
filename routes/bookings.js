@@ -56,12 +56,10 @@ router.post("/new", async (req, res) => {
           endTime,
           status: "booked",
         });
-        console.log("before insert");
         res.json({
           status: 200,
           message: `hall has been successfully booked on ${date} from ${startTime} Hours to ${endTime} Hours`,
         });
-        console.log("after insert ok");
         return;
       } else if (existingBookings.length > 0) {
         res.json({
