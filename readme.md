@@ -14,7 +14,7 @@
     "price":"4500"
 }
 
-# send data like the following example to book a room
+# send data like the following example to book a room (time is in 24hour format, and only hour is needed)
 - {
     "roomId": 15, 
     "customerName": "Anil Kumar MR",
